@@ -1,4 +1,4 @@
-# now-purge
+# now-purge [![Version](https://img.shields.io/npm/v/now-purge.svg)](https://www.npmjs.com/package/now-purge)
 
 > Utility to remove deployments without alias
 
