@@ -1,6 +1,6 @@
 # now-purge [![Version](https://img.shields.io/npm/v/now-purge.svg)](https://www.npmjs.com/package/now-purge)
 
-> Remove deployments without alias
+> Remove [now](https://zeit.co/now) deployments without an alias
 
 <p align="center">
   <img src="example.png" width="373" height="266" alt="example"/>
