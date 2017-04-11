@@ -1,0 +1,23 @@
+{
+  "name": "now-purge",
+  "version": "0.0.11",
+  "description": "Utility to remove deployments without alias",
+  "bin": {
+    "now-purge": "index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Matias Tucci",
+  "license": "MIT",
+  "dependencies": {
+    "now-client": "^0.7.0",
+    "yargs": "^7.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
