@@ -1,6 +1,6 @@
 {
   "name": "now-purge",
-  "version": "0.0.11",
+  "version": "0.0.13",
   "description": "Utility to remove deployments without alias",
   "bin": {
     "now-purge": "index.js"
@@ -9,7 +9,12 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Matias Tucci",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matiastucci/now-purge"
+  },
+  "homepage": "https://matiastucci.github.io/now-purge",
+  "author": "Matias Tucci <matiastucci@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "now-client": "^0.7.0",
