@@ -5,7 +5,7 @@ const libVersion = require('./package.json').version
 const argv = require('yargs')
       .usage('Usage: $0 <command> [options]')
       .command('t', 'now token')
-      .command('n', 'now.json name to filter your deployments')
+      .command('n', 'name in package.json or now.json to filter your deployments')
       .help('h')
       .alias('h', 'help')
       .version(() => libVersion)
