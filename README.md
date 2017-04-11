@@ -20,7 +20,7 @@ now-purge <command> [options]
 
 Commands:
   t  now token
-  n  now.json name to filter your deployments
+  n  name in package.json or now.json to filter your deployments
 
 Options:
   -h, --help     Show help                                             [boolean]
