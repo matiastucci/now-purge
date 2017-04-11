@@ -48,3 +48,14 @@ const config = {
 
 nowPurge(config)
 ```
+
+## From your CI
+
+You can remove your oldest deployments without an alias
+
+```bash
+npm install -g now-purge
+now-purge -t YOUR_NOW_TOKEN -n YOUR_NOW_OR_PACKAGE_NAME
+```
+
+
