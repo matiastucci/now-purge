@@ -23,6 +23,7 @@ Commands:
   n  name in package.json or now.json to filter your deployments
 
 Options:
+  --team, -m     team id
   -h, --help     Show help                                             [boolean]
   -v, --version  Show version number                                   [boolean]
 ```
@@ -43,7 +44,8 @@ const nowPurge = require('now-purge')
 // optional config parameters
 const config = {
   token: 'YOUR_NOW_TOKEN',
-  deploymentName: 'test'
+  deploymentName: 'test',
+  team: 'OPTION_TEAM_ID',
 }
 
 nowPurge(config)
@@ -55,7 +57,7 @@ You can remove your oldest deployments without an alias
 
 ```bash
 npm install -g now-purge
-now-purge -t YOUR_NOW_TOKEN -n YOUR_NOW_OR_PACKAGE_NAME
+now-purge -t YOUR_NOW_TOKEN -n YOUR_NOW_OR_PACKAGE_NAME --team OPTION_TEAM_ID
 ```
 
 

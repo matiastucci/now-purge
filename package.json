@@ -17,7 +17,7 @@
   "author": "Matias Tucci <matiastucci@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "now-client": "^0.7.0",
+    "now-client": "^1.1.1",
     "yargs": "^7.0.2"
   },
   "devDependencies": {

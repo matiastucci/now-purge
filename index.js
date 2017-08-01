@@ -6,13 +6,17 @@ const argv = require('yargs')
       .usage('Usage: $0 <command> [options]')
       .command('t', 'now token')
       .command('n', 'name in package.json or now.json to filter your deployments')
+      .option('team', {
+        alias: 'm',
+        describe: 'team id'
+      })
       .help('h')
       .alias('h', 'help')
       .version(() => libVersion)
       .alias('v', 'version')
       .argv
 
-const nowClient = require('now-client')
+const NowClient = require('now-client')
 
 let now
 
@@ -37,7 +41,7 @@ const removeDeployments = (deployments) => {
 
 // you can pass your `package.json` or `now.json` `name` to filter your deployments
 const main = (config = {}) => {
-  now = nowClient(argv.t || config.token)
+  now = new NowClient(argv.t || config.token, argv.team || config.team)
   getDeploymentsWithoutAlias(argv.n || config.deploymentName)
   .then(deployments => removeDeployments(deployments))
 }
