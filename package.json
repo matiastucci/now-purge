@@ -1,6 +1,6 @@
 {
   "name": "now-purge",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Utility to remove deployments without alias",
   "bin": {
     "now-purge": "index.js"
