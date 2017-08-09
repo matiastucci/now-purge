@@ -44,6 +44,7 @@ const main = (config = {}) => {
   now = new NowClient(argv.t || config.token, argv.team || config.team)
   getDeploymentsWithoutAlias(argv.n || config.deploymentName)
   .then(deployments => removeDeployments(deployments))
+  .catch(err => console.log(`${err} ❌`))
 }
 
 module.exports = main
