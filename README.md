@@ -8,6 +8,12 @@
 
 ## CLI
 
+### One time run (using NPM 5 / npx)
+
+```bash
+npx now-purge
+```
+
 ### Installation
 
 ```bash
